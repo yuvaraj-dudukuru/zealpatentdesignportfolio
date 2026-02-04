@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Phone, Mail, Send, MapPin, Clock, CheckCircle } from "lucide-react";
+import { Phone, Mail, Send, CheckCircle } from "lucide-react";
 
 const ContactSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -95,26 +95,6 @@ const ContactSection = () => {
                     </div>
                   </div>
                 </a>
-
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center">
-                    <Clock className="w-5 h-5 text-gold" />
-                  </div>
-                  <div>
-                    <div className="text-primary-foreground/70 text-sm">Working Hours</div>
-                    <div className="font-semibold">Mon - Sat: 9AM - 6PM IST</div>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-gold" />
-                  </div>
-                  <div>
-                    <div className="text-primary-foreground/70 text-sm">Location</div>
-                    <div className="font-semibold">India</div>
-                  </div>
-                </div>
               </div>
 
               {/* Decorative elements */}
