@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { CheckCircle, Award, Shield, Clock } from "lucide-react";
-import qualityBadge from "@/assets/quality-badge.png";
 
 const features = [
   {
@@ -86,20 +85,8 @@ const AboutSection = () => {
             </div>
           </div>
 
-          {/* Right - Features & Badge */}
+          {/* Right - Features */}
           <div className="space-y-8">
-            {/* Quality Badge */}
-            <div className="section-animate flex justify-center">
-              <div className="relative group">
-                <div className="absolute inset-0 bg-gold/20 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-500" />
-                <img
-                  src={qualityBadge}
-                  alt="Best Quality Guarantee"
-                  className="relative w-48 h-48 object-contain cursor-pointer transition-transform duration-300 group-hover:scale-110"
-                />
-              </div>
-            </div>
-
             {/* Feature Cards */}
             <div className="grid gap-6">
               {features.map((feature, index) => (
