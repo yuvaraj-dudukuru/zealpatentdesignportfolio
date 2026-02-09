@@ -40,7 +40,7 @@ const ContactSection = () => {
       <div className="absolute top-0 left-0 w-72 h-72 bg-gold/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="section-animate inline-flex items-center gap-2 text-gold font-semibold uppercase tracking-wider text-sm">
@@ -61,7 +61,7 @@ const ContactSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-start">
           {/* Contact Info */}
           <div className="section-animate space-y-8" style={{ transitionDelay: "100ms" }}>
-            <div className="bg-hero-gradient p-8 rounded-2xl text-primary-foreground relative overflow-hidden">
+            <div className="bg-hero-gradient p-6 sm:p-8 rounded-2xl text-primary-foreground relative overflow-hidden">
               {/* Decorative elements */}
               <div className="absolute top-0 right-0 w-40 h-40 bg-gold/10 rounded-full blur-3xl" />
               <div className="absolute bottom-0 left-0 w-32 h-32 bg-gold/5 rounded-full blur-2xl" />
@@ -93,9 +93,9 @@ const ContactSection = () => {
                   <div className="w-14 h-14 bg-gold/20 rounded-xl flex items-center justify-center group-hover:bg-gold/30 group-hover:scale-110 transition-all duration-300">
                     <Mail className="w-6 h-6 text-gold" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <div className="text-primary-foreground/60 text-sm">Email</div>
-                    <div className="font-semibold text-lg group-hover:text-gold transition-colors duration-300">
+                    <div className="font-semibold text-lg group-hover:text-gold transition-colors duration-300 truncate">
                       contact@zealpatentdesigns.com
                     </div>
                   </div>
@@ -133,7 +133,7 @@ const ContactSection = () => {
           <div className="section-animate" style={{ transitionDelay: "200ms" }}>
             <form
               onSubmit={handleSubmit}
-              className="bg-card p-8 rounded-2xl border border-border shadow-lg space-y-6 hover:border-gold/20 transition-all duration-500"
+              className="bg-card p-6 sm:p-8 rounded-2xl border border-border shadow-lg space-y-6 hover:border-gold/20 transition-all duration-500"
             >
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-10 h-10 bg-gold/10 rounded-lg flex items-center justify-center">

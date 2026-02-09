@@ -8,7 +8,7 @@ const Footer = () => {
     });
   };
   return <footer className="bg-hero-gradient text-primary-foreground pt-16 pb-8">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="lg:col-span-2">

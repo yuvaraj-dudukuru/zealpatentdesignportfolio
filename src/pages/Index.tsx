@@ -8,7 +8,7 @@ import ChatWidget from "@/components/ChatWidget";
 
 const Index = () => {
   return (
-    <div className="min-h-screen cursor-pointer">
+    <div className="min-h-screen cursor-pointer overflow-x-hidden">
       <Navbar />
       <HeroSection />
       <AboutSection />
