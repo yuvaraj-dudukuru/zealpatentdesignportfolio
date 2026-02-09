@@ -9,7 +9,7 @@ const HeroSection = () => {
       </div>
 
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh] px-2 sm:px-0">
           {/* Left Content */}
           <div className="space-y-8">
             
@@ -50,8 +50,8 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Content - Hero Image */}
-          <div className="fade-in-up fade-in-up-delay-2 relative">
+          {/* Right Content - Hero Image (hidden on mobile) */}
+          <div className="fade-in-up fade-in-up-delay-2 relative hidden lg:block">
             <div className="relative animate-float">
               <div className="absolute inset-0 bg-gold/20 rounded-3xl blur-3xl transform rotate-6" />
               <img src={heroGraphic} alt="Patent Design Illustration" className="relative rounded-3xl shadow-2xl w-full max-w-lg mx-auto" />
