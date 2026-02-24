@@ -6,30 +6,58 @@ import {
   Smartphone,
   Zap,
   ArrowRight,
+  Share2,
+  Box,
+  BarChart3,
+  Monitor,
 } from "lucide-react";
 
 const services = [
   {
     icon: Palette,
-    title: "Design Patent Drawings",
+    title: "Design Patent",
     description: "Precise visual representations emphasizing ornamental features.",
     category: "design",
   },
   {
     icon: Cog,
-    title: "Utility Patent Drawings",
+    title: "Utility Patent",
     description: "Detailed technical illustrations supporting functional inventions.",
     category: "utility",
   },
   {
     icon: Smartphone,
-    title: "Flowchart & Flow Diagram",
-    description: "Clear system logic and process flow illustrations for patent reporting.",
+    title: "Flowchart",
+    description: "Clear system logic and process flow illustrations.",
     category: "flowchart",
   },
   {
+    icon: Share2,
+    title: "Flow Diagram",
+    description: "Visual representations of system architectures and data flows.",
+    category: "flowdiagram",
+  },
+  {
+    icon: Box,
+    title: "Mechanical",
+    description: "High-precision illustrations for mechanical components and assemblies.",
+    category: "mechanical",
+  },
+  {
+    icon: BarChart3,
+    title: "Graphs",
+    description: "Data visualization and analytics graphs for technical reports.",
+    category: "graphs",
+  },
+  {
+    icon: Monitor,
+    title: "Screenshot",
+    description: "Clear captures of software interfaces and application workflows.",
+    category: "screenshot",
+  },
+  {
     icon: Zap,
-    title: "Electrical Drawings",
+    title: "Electrical",
     description: "Schematics and diagrams for electrical and electronic systems.",
     category: "electrical",
   },
@@ -75,13 +103,12 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <Link
               key={service.title}
               to={`/samples?category=${service.category}`}
-              className={`section-animate service-card bg-card p-6 rounded-xl border border-border cursor-pointer group block ${index === services.length - 1 ? "md:col-start-1 md:col-end-3 lg:col-start-2 lg:col-end-3" : ""
-                }`}
+              className="section-animate service-card bg-card p-6 rounded-xl border border-border cursor-pointer group block"
               style={{ transitionDelay: `${index * 50}ms` }}
             >
               <div className="w-14 h-14 bg-gold/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-gold/20 group-hover:scale-110 transition-all duration-300">
