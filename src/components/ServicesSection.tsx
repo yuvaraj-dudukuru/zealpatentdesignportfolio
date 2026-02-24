@@ -26,9 +26,9 @@ const services = [
   },
   {
     icon: Smartphone,
-    title: "App Drawings",
-    description: "Clear flow diagrams and system illustrations for software and application-based inventions.",
-    category: "app",
+    title: "Flowchart & Flow Diagram",
+    description: "Clear system logic and process flow illustrations for patent reporting.",
+    category: "flowchart",
   },
   {
     icon: Stamp,
@@ -90,7 +90,7 @@ const ServicesSection = () => {
             <span className="gradient-text">Illustration Solutions</span>
           </h2>
           <p className="section-animate text-muted-foreground text-lg mt-6">
-            From design patents to complex medical devices, we provide 
+            From design patents to complex medical devices, we provide
             expert illustrations for every patent category.
           </p>
         </div>
@@ -101,19 +101,18 @@ const ServicesSection = () => {
             <Link
               key={service.title}
               to={`/samples?category=${service.category}`}
-              className={`section-animate service-card bg-card p-6 rounded-xl border border-border cursor-pointer group block ${
-                index === services.length - 1 ? "md:col-start-1 md:col-end-3 lg:col-start-2 lg:col-end-3" : ""
-              }`}
+              className={`section-animate service-card bg-card p-6 rounded-xl border border-border cursor-pointer group block ${index === services.length - 1 ? "md:col-start-1 md:col-end-3 lg:col-start-2 lg:col-end-3" : ""
+                }`}
               style={{ transitionDelay: `${index * 50}ms` }}
             >
               <div className="w-14 h-14 bg-gold/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-gold/20 group-hover:scale-110 transition-all duration-300">
                 <service.icon className="w-7 h-7 text-gold" />
               </div>
-              
+
               <h3 className="font-display text-xl font-semibold text-foreground mb-3 group-hover:text-gold transition-colors">
                 {service.title}
               </h3>
-              
+
               <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                 {service.description}
               </p>
