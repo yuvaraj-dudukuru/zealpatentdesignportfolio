@@ -4,10 +4,7 @@ import {
   Palette,
   Cog,
   Smartphone,
-  Stamp,
-  Beaker,
   Zap,
-  Heart,
   ArrowRight,
 } from "lucide-react";
 
@@ -31,28 +28,10 @@ const services = [
     category: "flowchart",
   },
   {
-    icon: Stamp,
-    title: "Trademark Drawings",
-    description: "Clear and compliant representations for trademark applications.",
-    category: "trademark",
-  },
-  {
-    icon: Beaker,
-    title: "Chemical Illustrations",
-    description: "Accurate depiction of chemical structures and reaction pathways.",
-    category: "chemical",
-  },
-  {
     icon: Zap,
     title: "Electrical Drawings",
     description: "Schematics and diagrams for electrical and electronic systems.",
     category: "electrical",
-  },
-  {
-    icon: Heart,
-    title: "Medical Drawings",
-    description: "High-precision illustrations for medical devices and related technologies.",
-    category: "medical",
   },
 ];
 
@@ -90,7 +69,7 @@ const ServicesSection = () => {
             <span className="gradient-text">Illustration Solutions</span>
           </h2>
           <p className="section-animate text-muted-foreground text-lg mt-6">
-            From design patents to complex medical devices, we provide
+            From design patents to complex technical illustrations, we provide
             expert illustrations for every patent category.
           </p>
         </div>

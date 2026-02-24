@@ -61,7 +61,7 @@ const AboutSection = () => {
             </p>
 
             <p className="section-animate text-muted-foreground text-lg leading-relaxed">
-              From rough sketches, CAD models, and photographs to detailed technical specifications, we transform ideas into clear, publication-ready drawings across mechanical, medical, electrical, and high-tech domains. With a focus on accuracy, fast turnaround, and client satisfaction, we deliver reliable solutions that protect and present innovation at its best.
+              From rough sketches, CAD models, and photographs to detailed technical specifications, we transform ideas into clear, publication-ready drawings across mechanical, electrical, and high-tech domains. With a focus on accuracy, fast turnaround, and client satisfaction, we deliver reliable solutions that protect and present innovation at its best.
             </p>
 
             <div className="section-animate space-y-4">

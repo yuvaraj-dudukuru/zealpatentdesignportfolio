@@ -13,10 +13,7 @@ const categories = [
   { id: "mechanical", name: "Mechanical" },
   { id: "graphs", name: "Graphs" },
   { id: "screenshot", name: "Screenshot" },
-  { id: "trademark", name: "Trademark" },
-  { id: "chemical", name: "Chemical" },
   { id: "electrical", name: "Electrical" },
-  { id: "medical", name: "Medical" },
 ];
 
 const samplesData = [
@@ -184,10 +181,10 @@ const Samples = () => {
         )}
 
         <div className={`grid gap-6 ${catId === 'flowchart'
-            ? 'grid-cols-1 md:grid-cols-2'
-            : catId === 'flowdiagram'
-              ? 'grid-cols-1 max-w-4xl mx-auto'
-              : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'
+          ? 'grid-cols-1 md:grid-cols-2'
+          : catId === 'flowdiagram'
+            ? 'grid-cols-1 max-w-4xl mx-auto'
+            : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'
           }`}>
           {catSamples.map((sample, index) => (
             <div
